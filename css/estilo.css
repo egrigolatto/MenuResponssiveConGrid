@@ -1,0 +1,54 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url('../img/fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+.nav{
+    position: relative;
+    left: -100%;
+    transition: all 0.5s;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menuLink{
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.4em;
+    background: rgba(246, 5, 56,0.3);
+    font-weight: 600;
+}
+.menuLink:hover{
+    background: white;
+    color: rgb(246, 5, 56);
+}
+.iconoMenu{
+    cursor: pointer;
+    margin-left: 20px;
+}
+.mostrar{
+    left: 0;
+}
+
+@media(min-width:1024px){
+    .nav{
+        left: 0;
+    }
+    .menu{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(auto-fill, 130px);
+    }
+    .iconoMenu{
+        display: none;
+    }
+    
+}
